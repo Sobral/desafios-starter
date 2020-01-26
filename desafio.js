@@ -30,6 +30,7 @@ function pares(x, y) {
     }
   }
 }
+
 pares(32,321);
 
 //
@@ -45,4 +46,26 @@ function temHabilidade(skills) {
   return found;
 }
 var skills = ["Javascript", "ReactJS", "React Native"];
+
 temHabilidade(skills); // true ou false
+
+//
+//Exercicio 4
+//Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+function experiencia(anos) {  // código aqui
+  if(anos >= 7) { return "Jedi Master";}
+  
+  if(anos <= 6 && anos > 3) {return "Avançado";}
+
+  if(anos <= 3 && anos > 1) { return "Intermediário";}
+  else return "Iniciante";
+
+  return 
+
+}
+var anosEstudo = 7;
+experiencia(anosEstudo);
+// De 0-1 ano: Iniciante
+// De 1-3 anos: Intermediário
+// De 3-6 anos: Avançado
+// De 7 acima: Jedi Master
