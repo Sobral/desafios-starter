@@ -18,4 +18,16 @@ function retornaConteudo(dados){
   return `O usuário mora em ${cidade_uf}, no bairro ${dados.bairro}, na rua ${rua_completo}`
 }
 
-console.log(retornaConteudo(endereco));
+//
+//Exercicio 2
+//Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+//
+function pares(x, y) {
+  for(var i=x; i<= y; i++){
+    const condicao = (i%2) == 0;
+    if(condicao) {
+      console.log(i);
+    }
+  }
+}
+pares(32,321);
