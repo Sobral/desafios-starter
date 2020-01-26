@@ -69,3 +69,25 @@ experiencia(anosEstudo);
 // De 1-3 anos: Intermediário
 // De 3-6 anos: Avançado
 // De 7 acima: Jedi Master
+
+//
+//5º exercício
+//Dado o seguinte vetor de objetos:
+//
+var usuarios = [  
+  {    nome: "Diego", habilidades: ["Javascript", "ReactJS", "Redux"]  },
+  {    nome: "Gabriel", habilidades: ["VueJS", "Ruby on Rails", "Elixir"]  }
+]
+
+//Escreva uma função que produza o seguinte resultado:
+//O Diego possui as habilidades: Javascript, ReactJS, Redux
+//O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+
+function retornaHabilidades(dados) {
+  for(usuario of dados){
+    const mensagem = `O ${usuario.nome} possui as habilidades: ${usuario.habilidades.join(', ')}`;
+    console.log(mensagem);
+  }
+}
+
+retornaHabilidades(usuarios);
